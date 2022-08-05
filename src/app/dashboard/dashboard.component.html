@@ -1,6 +1,10 @@
-<h2>Dog Breeds</h2>
 <div class="dogs-list">
-  <a *ngFor="let dog of dogs$ | async" routerLink="/dog/{{ dog.id }}">
-    {{ dog.name }}
-  </a>
+  <div
+    class="dog-tile"
+    *ngFor="let dog of dogs$ | async"
+    routerLink="/dog/{{ dog.id }}"
+  >
+    <img [src]="dog.imageUrl" alt="{{ dog.name }}" />
+    <h3>{{ dog.name }}</h3>
+  </div>
 </div>
