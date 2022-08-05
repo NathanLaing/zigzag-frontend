@@ -1,0 +1,7 @@
+<div *ngIf="dog">
+  <h2>{{ dog.name }}</h2>
+  <img [src]="dog.imageUrl" />
+
+  <p>{{ dog.description }}</p>
+</div>
+<button type="button" (click)="goBack()">go back</button>
