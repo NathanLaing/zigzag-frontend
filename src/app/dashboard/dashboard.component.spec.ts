@@ -22,4 +22,8 @@ describe('DashboardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render a dogs list', () => {
+    expect(fixture.nativeElement.querySelector('.dogs-list')).toBeTruthy();
+  });
 });

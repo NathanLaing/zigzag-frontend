@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 
@@ -11,7 +11,7 @@ import { DogFetcherService } from '../services/dog-fetcher/dog-fetcher.service';
   styleUrls: ['./dog-detail.component.scss'],
 })
 export class DogDetailComponent implements OnInit {
-  @Input() public dog?: Dog;
+  public dog?: Dog;
 
   constructor(
     private location: Location,
